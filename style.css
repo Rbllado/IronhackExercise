@@ -1,1 +1,61 @@
 /* This File will contain the style for the index.html */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Roboto;
+    line-height: 3.5em;
+    font-weight: 300;
+    font-size: 10px;
+  }
+
+  /* Hay algo que no me cuadra, no me hace el color background completo. */
+  .nav-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 2em;
+      background: rgb(25, 33, 41);
+  }
+
+  .header{
+      height: 650px;
+      background-image:url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+      background-position: 0 0; 
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .quote{
+    font-size: 2.5em;
+  }
+
+  h1{
+    /*  define font-family here  */
+    font-size   : 9em;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4em;
+    color: white;
+    text-shadow: #020819 8px -20px 9px;
+}
+h3{
+    font-size: 4.2em;
+    text-align: center;
+}
+h4{
+    font-size: 1.5em;
+    letter-spacing: 0.4px;
+}
+
+h5{
+    font-size: 1.2em;
+
+}
