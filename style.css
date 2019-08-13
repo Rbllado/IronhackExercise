@@ -13,12 +13,27 @@ body {
   font-size: 10px;
 }
 
-/* Hay algo que no me cuadra, no me hace el color background completo. */
-.nav-bar a {
+.nav-bar {
+  background: rgb(25, 33, 41);
+  padding: 14px;
+}
+
+.nav-bar a{
   color: white;
   text-decoration: none;
   font-size: 2em;
-  background: rgb(25, 33, 41);
+}
+
+.nav-bar-ul{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar-ul li{
+  list-style-type: none;
+  text-align: center;
 }
 
 .header {
@@ -27,9 +42,34 @@ body {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 50px;
+  position: relative;
 }
+
 .quote {
   font-size: 2.5em;
+  position: absolute;
+  left: 10px;
+  bottom: 100px;
+}
+
+/* If I am using only general information is not showing good this article. */
+#general-information .dark-background{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#general-information .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+}
+
+.container{
+  width: 1200px;
+  margin:0 auto; /* Auto to align in center*/
+  padding: 75px 0;
 }
 
 .dark-background{
@@ -41,6 +81,8 @@ body {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .link-btn {
@@ -51,14 +93,74 @@ body {
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
+
+#structure > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Para dar la forma a los boxes  */
 .service-box {
   font-size: 1.7em;
   text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin-top: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 20px;
+  width: 40%;
+  /* margin: auto;  NO ESTA EN LA GUIA, PERO HACE QUE SE VEA EN EL CENTRO*/
 }
 .service-box img {
   width: 125px;
+}
+
+
+
+#team{
+  padding: 75px 0;
+  margin: 0 auto;
+}
+
+/* I did it with prueba because with if I have only only one div, I am not able to show the content in the good way */
+#team .prueba{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+#team p{
+  width: 60%;
+  margin: 10px auto;
+}
+
+#team hr{
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  width: 40%;
+  
 }
 
 #team .section-text {
@@ -79,11 +181,20 @@ body {
 .footer{
     font-size: 1.9em;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .address {
   font-size: 0.8em;
   font-style: normal;
+  margin-bottom: 30px;
 }
 
 .footer a{
@@ -92,6 +203,20 @@ body {
     list-style: none;
 }
 
+.footer ul{
+  list-style: none;
+}
+
+.map-frame{
+  height: 375px;
+  width: 60%;
+
+}
+
+
+
+
+/* For style about the titles */
 h1 {
   /*  define font-family here  */
   font-size: 9em;
@@ -109,10 +234,12 @@ h2 {
 h3 {
   font-size: 4.2em;
   text-align: center;
+  padding-top: 30px;
 }
 h4 {
   font-size: 1.5em;
   letter-spacing: 0.4px;
+  margin-bottom: 15px;
 }
 
 h5 {
