@@ -101,29 +101,31 @@
     </section>
 
     <section id="schedule">
-        <h2>Section Four</h2>
+        <h3>Schedule a time slot</h3>
         <form class="slot-form" action="/register" method="POST">
-            <div class="slot-fomr-container">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username"><br>
-            </div>
-            <div class="slot-fomr-container">
+            <div class="slot-form-container">
                 <label for="email">Enter your Email: </label>
-                <input type="email" name="email" id="email"><br>
+                <input type="email" name="email" id="email" placeholder="email"><br>
             </div>
-            <div class="slot-fomr-container">
-                <label for="participants">participants: </label>
-                <input type="number" name="number" id="participants"><br>
+            <div class="slot-form-container">
+                <label for="participants">Number of participants: </label>
+                <input type="number" name="number" id="participants" placeholder="number of participants"><br>
             </div>
-            <div class="slot-fomr-container">
-                <label for="date">Data</label>
+            <div class="slot-form-container">
+                <label for="date">Date</label>
                 <input type="date" name="date" id="date"><br>
             </div>
-            <div class="slot-fomr-container">
-                <label for="time"></label>
-                <input type="select" name="time"id="time"><br>
+            <div class="slot-form-container">
+                <label for="time">Time</label>
+                <select name="time" id="time">
+                    <option value="early">9:00-11:00</option>
+                    <option value="mid">12:00-14:00</option>
+                    <option value="late">15:00-17:00</option>
+                </select>
             </div>
-            <button type="submit">Log in</button>
+            <div class="slot-form-container">
+                <button class="boton" type="submit">Reserve your slot</button>
+            </div> 
         </form>
         <em>Nothing to Add!</em>
     </section>
